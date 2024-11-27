@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Taste of Lagos</h1>
+        <h2>Christmas Bookings</h2>
+    </header>
+
+    <div class="image-container">  
+        <img src="https://tasteoflagos.co.uk/wp-content/uploads/2023/02/IMG_0636-e1675479361694-Edited.png" 
+        alt="Girl chef logo" class="logo">
+    </div>
+    <nav>
+        <ul class="nav_links">
+            <li><a href="" target="_blank">About</a></li>
+            <li><a href="" target="_blank">Contact</a></li>
+            <li><a href="#book" aria-haspopup="true" target="_black" aria-expanded="false">Book</a>
+                <ul class="dropdown">
+                   <li><a href="#moreinfo">More Info</a></li>
+                   <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <p>
+            Welcome to Taste of Lagos – a mobile Essex based Nigerian catering company, serving London, Essex and Kent. Taste of Lagos’ most popular food item is its authentic Nigerian Shawarma, which tastes like it is straight from Lagos.
+        </p>
+    </main>
+
+    <div class="button-size">
+        <button onclick="increaseTextSize()">
+            Increase text size
+        </button>
+        <button onclick="decreaseTextSize()">
+            Decrease text size
+        </button>
+        <button onclick="toggleTheme()">
+            Toggle Theme
+        </button>
+    </div>
+
+    <h3 id="book">Booking Form</h3>
+
+    <form onsubmit="validateForm(event)">
+        <div class="user-details">
+            <div class="input-box" required>
+                <label class="details">
+                    Full Name<span>*</span>
+                </label>
+                <input type="text" placeholder="Enter name" required>
+            </div>
+            <div class="input-box" required>
+                <label class="details">
+                    Email<span>*</span>
+                </label>
+                <input type="text" placeholder="name@gmail.com" required>
+            </div>
+            <div class="input-box" required>
+                <label class="details">
+                    Delivery<span>*</span>
+                </label>
+                <input type="text" placeholder="Enter location" required>
+            </div>
+            <div class="input-box" required>
+                <label class="details">
+                    Location<span>*</span>
+                </label>
+                <input type="text" placeholder="Enter location" required>
+            </div>
+            <div class="input-box" required>
+                <label class="details">
+                    No' of peoeple<span>*</span>
+                </label>
+                <input type="text" placeholder="Quantity" required>
+            </div>
+            <div class="input-box" required>
+                <label class="details">
+                    Type of service<span>*</span>
+                </label>
+                <input type="text" placeholder="Enter service type" required>
+            </div>
+            <button type="submit" class="btn">
+                Submit
+            </button> 
+        </div>
+    </form>
+    <section id="moreinfo" class="info-container">
+        <h2>
+            More Information
+        </h2>
+        <p>
+            Straight off the grill (aka Live Catering) Taste of Lagos is prepared right in front of you, so you can say how you want it and how you like it – call it full autonomy. 
+            Whatever you order will already be pre-packaged in Taste of Lagos’ original packaging and it will be delivered pre-packaged to your event.
+            This service is for the smallest gatherings to the much larger celebrations. We offer Shawarma platters & large trays of our other food items.
+        </p>
+    </section>
+    
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19858.646076819892!2d-0.08221725!3d51.52549295000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cb35fc4ef51%3A0xdbbae99319852b53!2sColumbia%20Road%20Flower%20Market!5e0!3m2!1sen!2suk!4v1732531438405!5m2!1sen!2suk" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <footer>
+        <p>This project was coded by 
+            <a href="https://github.com/mariamayowa" target="_blank"> Maria Longe</a>
+            and is hosted by
+            <a href="https://marias-first-weather-app.netlify.app" target="_blank"> Netlify</a>
+        </p>
+    </footer>
+
+    
+</body>
+</html>
