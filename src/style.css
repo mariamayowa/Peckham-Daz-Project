@@ -91,6 +91,13 @@
   p {
     text-align: center;
   }
+
+  img {
+    width: 60%;
+    display: flex;
+    margin: auto;
+
+  }
   
   .user-details {
       margin: 5px auto 0;
@@ -168,7 +175,6 @@
 
   .contact {
     margin: 10px;
-    color: black;
   }
 
   .map {
