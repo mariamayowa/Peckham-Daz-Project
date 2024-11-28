@@ -117,6 +117,8 @@
   
   .details {
     margin: 10px;
+    font-weight: bold;
+    font-size: 15px;
   }
   
   ul {
@@ -162,6 +164,11 @@
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
+  }
+
+  .contact {
+    margin: 10px;
+    color: black;
   }
 
   .map {
